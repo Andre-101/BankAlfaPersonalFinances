@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="595.0" style="-fx-background-color: #1f173f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alfa.HelloController">
+   <children>
+      <TableView fx:id="userRegisterTable" prefHeight="263.0" prefWidth="595.0" style="-fx-background-color: #898791;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="typeTUR" prefWidth="87.3333511352539" text="Tipo" />
+            <TableColumn fx:id="amountTUR" prefWidth="121.3333511352539" text="Monto" />
+          <TableColumn fx:id="descriptionTUR" prefWidth="229.3333282470703" text="Descripcion" />
+            <TableColumn fx:id="dateTUR" prefWidth="154.66665649414062" text="Fecha" />
+        </columns>
+      </TableView>
+      <Label layoutX="36.0" layoutY="286.0" prefHeight="17.0" prefWidth="45.0" text="Balance:" textFill="WHITE" />
+      <Button fx:id="register" layoutX="36.0" layoutY="346.0" mnemonicParsing="false" onAction="#onRegisterButtonClicked" text="Registrar" />
+      <JFXToggleButton fx:id="expenses" layoutX="430.0" layoutY="324.0" onAction="#expensesToggleClicked" prefHeight="53.0" prefWidth="106.0" selected="true" text="Gastos" textFill="WHITE" />
+      <JFXToggleButton fx:id="income" layoutX="430.0" layoutY="266.0" onAction="#incomeToggleClicked" selected="true" text="Ingresos" textFill="WHITE" />
+      <Label fx:id="balance" layoutX="99.0" layoutY="286.0" prefHeight="17.0" prefWidth="79.0" textFill="WHITE" />
+      <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="121.0" layoutY="341.0" onMouseClicked="#refreshView" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/refresh_80px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="314.0" prefWidth="342.0" style="-fx-background-color: #1f173f;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alfa.FormController">
+   <children>
+      <Label layoutX="79.0" layoutY="24.0" prefHeight="27.0" prefWidth="182.0" text="Registro de financiero" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <JFXComboBox fx:id="comboTypeRegister" layoutX="108.0" layoutY="60.0" promptText="Tipo de registro" style="-fx-background-color: WHITE;" />
+      <JFXTextField fx:id="amountTF" alignment="CENTER" layoutX="103.0" layoutY="103.0" promptText="Cantidad" style="-fx-text-fill: WHITE;" />
+      <JFXTextField fx:id="descriptionTF" alignment="CENTER" layoutX="60.0" layoutY="144.0" prefHeight="25.0" prefWidth="220.0" promptText="Descripción" style="-fx-text-fill: WHITE;" />
+      <DatePicker fx:id="dateDP" layoutX="84.0" layoutY="188.0" promptText="Fecha" />
+      <Button fx:id="save" layoutX="144.0" layoutY="252.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Guardar" />
+   </children>
+</AnchorPane>
